@@ -2,3 +2,10 @@ baseURL = 'https://anhtr.github.io/anhtr-site-hugo/'
 languageCode = 'en-us'
 title = 'anhtr'
 theme = 'ananke'
+
+# make sure that .qmd and .ipynb files and other source code or data files are not published as part of the site
+ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
+
+# configure Hugo’s markdown renderer to allow raw HTML
+[markup.goldmark.renderer]
+unsafe= true
